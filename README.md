@@ -1,7 +1,7 @@
 ## Source for my portfolio website https://mithundiddi.com
 
 
-Copyright © 2020 mithundiddi.com | All rights reserved | [![CC BY 4.0][cc-by-shield]][cc-by] 
+Copyright © 2020 mithundiddi.com | All rights reserved | [![CC BY 4.0][cc-by-image]][cc-by] 
 
 This [work](https://mithundiddi.com) by Mithun Diddi is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
 
