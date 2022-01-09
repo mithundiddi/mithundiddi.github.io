@@ -2909,6 +2909,7 @@ input, select, textarea {
 
 	header {
 		cursor: default;
+
 	}
 
 		header > .date {
@@ -3285,7 +3286,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 0rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3309,8 +3310,9 @@ input, select, textarea {
 		position: relative;
 		cursor: default;
 		text-align: center;
-		z-index: 1;
-		min-height: 100vh;
+		/*z-index: 1;*/
+		z-index: 6;
+		/*min-height: 100vh;*/
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3408,7 +3410,7 @@ input, select, textarea {
 				transform: translateY(2rem);
 				opacity: 0;
 				visibility: hidden;
-				text-transform: capitalize;
+				text-transform: none;
 			}
 
 		#intro.hidden {
@@ -3543,6 +3545,8 @@ input, select, textarea {
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
+			line-height: 1;
+			/*padding-bottom: 1vh;*/
 		}
 
 		#header blockquote {
@@ -3573,7 +3577,7 @@ input, select, textarea {
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			visibility: visible;
 		}
 
@@ -3780,7 +3784,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 4rem 8rem 6rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
