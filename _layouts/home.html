@@ -9,10 +9,8 @@
 
     <!-- Intro -->
     <div id="intro">
-        <h2 style="text-transform: none">Like a
-            nice Mocha Latte,</h2>
-        <h2 style="text-transform: none">I'm a Blend of an Engineer,
-            Explorer, and a Remote Pilot.</h2>
+        <h2 style="text-transform: none">"Blend of an Engineer,
+            Explorer, and a Remote Pilot."</h2>
         <ul class="actions">
             <li><a href="#nav"
                    class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -31,6 +29,30 @@
 
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go
+    to Top</button>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div>
 
     {% include footer.html %}
@@ -42,7 +64,7 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
-
+    <!--script src="../assets/js/returnbuttontop.js"></script-->
 </div>
 
 </body>

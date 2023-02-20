@@ -1,18 +1,37 @@
 <!-- Footer -->
 <footer id="footer">
     <section class="split contact">
-        <h2 class="align-center">Get in
-            Touch</h2>
+        <h2 class="align-center"
+            style="text-transform: inherit;padding:1em;">Get in
+            touch</h2>
         <section>
             <h3>Email</h3>
             <p><a href="mailto:mail@mithundiddi.com"
+                  style="padding: 1em; font-size: 1.25rem;
                   target="_blank">mail@mithundiddi.com</a></p>
         </section>
-        <section>
+        <!-- section>
             <h3>Field Robotics Lab Website</h3>
             <p><a href="https://fieldroboticslab.ece.northeastern.edu/"
-                  target="_blank">&ensp; https
-                ://fieldroboticslab.ece.northeastern.edu/</a></p>
+                  style="font-size: 1.25rem"
+                  target="_blank">&ensp; https://fieldroboticslab.ece.northeastern.edu/</a></p>
+        </section -->
+        <section >
+            <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkoqbpl" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="telephone">Telephone Number (Optional)</label>
+                    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                    <label for="message">Message</label>
+                    <textarea rows="6" name="message" id="message" placeholder="Love to hear from you !!" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form from portfolio site">
+                </fieldset>
+                <div class="g-recaptcha" data-sitekey="6Lf8E5wkAAAAAIrXQVHksNNTkM7E1sEm_DnT9XN-"></div> <!-- replace with your recaptcha SITE key not secret key -->
+                <input type="submit" value="Submit">
+            </form>
         </section>
         <section>
             <h3>Social</h3>
