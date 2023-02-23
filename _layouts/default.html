@@ -32,13 +32,15 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+</script>
 
-    window.onload = function() {
-        var el = document.getElementById('g-recaptcha-response');
-        if (el) {
-            el.setAttribute('required', 'required');
-        }
-    }
+<script>
+        grecaptcha.ready(function () {
+        grecaptcha.execute('{6Lf8E5wkAAAAAIrXQVHksNNTkM7E1sEm_DnT9XN-}', {action: 'submit'}).then(function (token) {
+            console.info("got token: " + token);
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
 </script>
 
 <div>
