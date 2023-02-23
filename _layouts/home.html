@@ -51,10 +51,17 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+    // google recaptcha function
+    window.onload = function() {
+        var el = document.getElementById('g-recaptcha-response');
+        if (el) {
+            el.setAttribute('required', 'required');
+        }
+    }
+
 </script>
 
 <div>
-
     {% include footer.html %}
     <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -64,6 +71,10 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- script
+    src="https://gist.github.com/colevscode/ce67075b62f843b7e95b1d5a1370035b
+    .js"></script -->
     <!--script src="../assets/js/returnbuttontop.js"></script-->
 </div>
 
