@@ -5,5 +5,13 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     {% seo %}
-
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf8E5wkAAAAAIrXQVHksNNTkM7E1sEm_DnT9XN-"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Lf8E5wkAAAAAIrXQVHksNNTkM7E1sEm_DnT9XN-', {action: 'submit'}).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
 </head>
